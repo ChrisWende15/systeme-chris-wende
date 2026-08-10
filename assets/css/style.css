@@ -92,14 +92,19 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   color: var(--white);
 }
 .brand img { width: 44px; height: auto; }
-.brand-text { line-height: 1.2; font-size: 1.02rem; letter-spacing: .04em; }
-.brand-text strong { font-weight: 800; }
+.brand-text {
+  line-height: 1.25;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
 .brand-text small {
   display: block;
-  font-size: .62rem;
-  letter-spacing: .14em;
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .13em;
   text-transform: uppercase;
-  opacity: .75;
+  opacity: .8;
 }
 .main-nav { display: flex; align-items: center; gap: 26px; }
 .main-nav a {

@@ -119,11 +119,12 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .hero-inner {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-  gap: 40px;
-  align-items: end;
-  padding-top: 80px;
+  gap: 48px;
+  align-items: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
-.hero-text { padding-bottom: 80px; }
+.hero-text { padding-bottom: 0; }
 .hero h1 {
   font-size: clamp(1.9rem, 4.4vw, 3rem);
   font-weight: 700;
@@ -144,7 +145,6 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   opacity: .75;
 }
 .hero-img {
-  align-self: end;
   text-align: center;
 }
 .hero-img img {
@@ -152,7 +152,8 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   width: auto;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 12px 30px rgba(0,0,0,.35));
+  border-radius: var(--radius);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, .4);
 }
 
 /* ---------- Bekannt aus ---------- */
@@ -420,9 +421,8 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .desktop-only { display: inline; }
 
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; padding-top: 56px; }
-  .hero-text { padding-bottom: 0; }
-  .hero-img img { max-height: 340px; }
+  .hero-inner { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; }
+  .hero-img img { max-height: 380px; }
   .pain-grid, .cards, .two-cols { grid-template-columns: 1fr; }
   .about-inner { grid-template-columns: 1fr; }
   .about-img { max-width: 380px; margin: 0 auto; }

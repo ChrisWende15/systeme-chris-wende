@@ -47,6 +47,7 @@ img { max-width: 100%; height: auto; }
 .container.narrow { max-width: 860px; }
 
 h1, h2, h3 { line-height: 1.25; }
+h1, h2, .callout-q, .lead { text-wrap: balance; }
 h2 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); font-weight: 700; margin-bottom: 1rem; }
 h3 { font-size: 1.15rem; font-weight: 700; }
 
@@ -90,7 +91,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   text-decoration: none;
   color: var(--white);
 }
-.brand img { width: 46px; height: auto; }
+.brand img { width: 44px; height: auto; }
 .brand-text { line-height: 1.2; font-size: 1.02rem; letter-spacing: .04em; }
 .brand-text strong { font-weight: 800; }
 .brand-text small {
